@@ -1191,64 +1191,75 @@ h6{
    height: 50px;
  }
 /*body*/
- /*carousel*/
+/*carousel*/
 
-
-.carousel{
-  position: relative; 
-  display: flex;
-  align-items: center;
-  width: 100%;
-  bottom: 15px;
-}
-.swiper{
+.carousel {
+   width: 100%;
+   height: auto;
+   position: relative;
+ }
+ 
+ .carousel > ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+ 
+ .carousel > ul li {
+   list-style-type: none;
+ }
+ .slide {
+   position: absolute;
+   inset: 0;
+   opacity: 0;
+   transition: 1000ms opacity ease-in-out;
+   transition-delay: 200ms;
    display: inline-flex;
-}
-
-.swiper-wrapper{
-   list-style: none;
-   text-decoration: none;
-}
-li{
-   list-style: none;
-}
-.swiper-wrapper .swiper-slide{
-border: none;
-margin-right: 10px;
-}
-.swiper-button-next, .swiper-button-prev{
-  opacity:1;
-  background-color: #FFFFFF;
-color: black;
-border: 1px black;
-width: 100px;
-height: 100px;
-
-}
-.swiper-button-next:hover, .swiper-button-prev:hover{
-  opacity: 1;
-  background-color: #FFFFFF;
-}
-/*------------------------responsivité-------------------*/
-@media only screen and (max-width: 600px) {
-   body{
-      background-color: red;
-   }
-   .bloc1
-   .bloc2{
-width: 200px;
-border-radius: 10px;
-   }
-   .bloc2 .para1{
-      width: 100%;
-      margin: 12px 0;
-      border-radius: 10px;
-
-   }
-   .bloc2:hover{
-      width: 300px; 
-   }
-   .bloc1 .navi1{
-
-   } 
-}
+ }
+ 
+ .slide > img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+ }
+ 
+ .slide[data-active] {
+   opacity: 1;
+   z-index: 1;
+   transition-delay: 0ms;
+ }
+ 
+ .carousel-button {
+   position: absolute;
+   z-index: 2;
+   background: none;
+   border: none;
+   font-size: 4rem;
+   top: 50%;
+   transform: translateY(-50%);
+   color: rgba(255, 255, 255, .5);
+   cursor: pointer;
+   border-radius: .25rem;
+   padding: 0 .5rem;
+   background-color: white;
+ }
+ 
+ .carousel-button:hover,
+ .carousel-button:focus {
+   color: white;
+   background-color: rgba(255, 255, 255, 0.2);
+ }
+ 
+ .carousel-button:focus {
+   outline: 1px solid black;
+ }
+ 
+ .carousel-button.prev {
+   left: 1rem;
+ }
+ 
+ .carousel-button.next {
+   right: 1rem;
+ }
