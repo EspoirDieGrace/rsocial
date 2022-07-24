@@ -17,9 +17,9 @@ buttons.forEach(button => {
   })
 })*/
 var swiper = new Swiper(".swiper", {
-    slidesPerView: 8,
+    slidesPerView: 9,
     spaceBetween: 3,
-    slidesPerGroup: 8,
+    slidesPerGroup: 9,
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {

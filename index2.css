@@ -1,15 +1,13 @@
 body{
-    min-width: 1177px;
-}
+    min-width: 1307px;}
 header{
-    min-width: 1177px;
+    min-width: 1307px;
 }
 .container-fluid{
-    min-width: 1177px;
+    min-width: 1307px;
     position: relative;
-    display: block;
 }
 .container-fluid .row{
-    min-width: 1177px;
+    min-width: 1307px;
     margin-bottom: 10px;
 }
