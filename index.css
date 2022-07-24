@@ -282,7 +282,7 @@ nav ul li a:hover{
 
 .bloc5{
    float: right;
-   margin-top: -75px;
+   margin-top: -60px;
    margin-right: 50px;
 }
 .lien5{
@@ -337,6 +337,7 @@ nav ul li a:hover{
     background-color: rgb(243, 243, 243);
     border: none;
  }
+ 
  .lien6{
     font-weight: bold;
     color: black;
@@ -367,7 +368,7 @@ nav ul li a:hover{
  }
 
  .bloc6{
-   margin-top: -32px;
+   margin-top: -22px;
     border-bottom: 0.1px solid rgb(239, 239, 239);
  }
  .trait2{
@@ -1201,7 +1202,7 @@ h6{
   display: flex;
   align-items: center;
   width: 100%;
-  bottom: 15px;
+  bottom: 8px;
 }
 .swiper{
    display: inline-flex;
@@ -1223,7 +1224,7 @@ margin-right: 10px;
   background-color: #FFFFFF;
 color: black;
 border: 1px black;
-width: 100px;
+width: 1000px;
 height: 100px;
 
 }
